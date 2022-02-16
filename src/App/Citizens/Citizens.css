@@ -1,0 +1,30 @@
+#citizens {
+  width: 20%;
+}
+
+#citizens h1 {
+  margin: 12.5px 0;
+}
+
+#citizens ul {
+  list-style: none;
+  border: grey solid 1px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#citizens li {
+  padding: 10px;
+}
+
+#citizens li:not(:last-of-type) {
+  border-bottom: grey solid 1px;
+}
+
+#citizens li:hover {
+  cursor: pointer;
+  background-color: #313944;
+  color: #fff;
+  transform: scale(1.1);
+  border-radius: 5px;
+}

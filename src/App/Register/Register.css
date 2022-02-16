@@ -1,0 +1,14 @@
+#register {
+  color: red;
+}
+
+#register form {
+  display: flex;
+  flex-direction: column;
+}
+
+#register input {
+  margin: 10px 0;
+  padding: 5px 2px;
+  font-size: 15px;
+}
