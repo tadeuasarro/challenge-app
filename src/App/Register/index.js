@@ -1,23 +1,23 @@
 import { useState } from 'react';
-import registerCitizen from './register_citizen';
+import citizenCreate from './citizen_create';
 import Navbar from '../Navbar';
 import './Register.css';
 
 const Register = () => {
   const [state, setState] = useState({});
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
 
     setState({
       ...state,
       [name]: value,
-    })
-  }
+    });
+  };
 
   const handleClick = () => {
-    registerCitizen(state);
-  }
+    citizenCreate(state);
+  };
 
   return (
     <div id="register">
@@ -34,6 +34,6 @@ const Register = () => {
       </form>
     </div>
   );
-}
+};
 
 export default Register;

@@ -1,6 +1,4 @@
-const registerCitizen = async params => {
-  console.log(params);
-
+const citizenCreate = async (params) => {
   const url = 'http://localhost:4000/citizen';
   const config = {
     mode: 'cors',
@@ -14,7 +12,7 @@ const registerCitizen = async params => {
   const res = await fetch(url, config);
   const result = await res.json();
 
-  console.log(result);
+  return result;
 };
 
-export default registerCitizen;
+export default citizenCreate;

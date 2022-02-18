@@ -1,21 +1,21 @@
-#register {
+#address {
   color: red;
   width: 40%;
 }
 
-#register form {
+#address form {
   display: flex;
   flex-direction: column;
 }
 
-#register input {
+#address input {
   margin: 10px 0;
   padding: 2px;
   height: 40px;
   font-size: 15px;
 }
 
-#register button {
+#address button {
   height: 40px;
   background-color: #313944;
   border-radius: 5px;
@@ -25,7 +25,7 @@
   margin-top: 10px;
 }
 
-#register button:hover {
+#address button:hover {
   cursor: pointer;
   border: 1px solid #313944;
   background-color: #fff;
