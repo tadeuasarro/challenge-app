@@ -12,11 +12,11 @@ const update = async (model, params) => {
   const res = await fetch(url, config);
   const result = await res.json();
 
-  if (result.error) {
-    return { status: 'error', message: 'Não foi possível atualizar o cadastro, verifique seus dados e tente novamente!' };
+  if (result.id) {
+    return { status: 'success', message: 'Cadastro atualizado com sucesso!' };
   }
 
-  return { status: 'success', message: 'Cadastro atualizado com sucesso!' };
+  return { status: 'error', message: result };
 };
 
 export default update;

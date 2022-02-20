@@ -10,6 +10,11 @@ import { setUpdate } from '../../../actions/update';
 
 import './Show.css';
 
+const translate = {
+  active: 'Ativo',
+  inactive: 'Inativo',
+};
+
 const Citizen = () => {
   const [citizen, setCitizen] = useState(null);
 
@@ -25,7 +30,14 @@ const Citizen = () => {
     setCitizen(result);
   }, []);
 
-  if (!citizen) return <div>Loading!</div>;
+  if (!citizen) {
+    return (
+      <div id="citizen">
+        <Navbar />
+        <div>Loading!</div>
+      </div>
+    );
+  }
 
   const handleClick = () => {
     dispatch(setUpdate(citizen));
@@ -53,6 +65,8 @@ const Citizen = () => {
           <p className="value">{citizen.phone}</p>
           <p className="key">Nascimento:</p>
           <p className="value">{citizen.birth_date}</p>
+          <p className="key">Status:</p>
+          <p className="value">{translate[citizen.status]}</p>
         </div>
       </div>
       <div className="edit-container">

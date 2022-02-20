@@ -1,5 +1,5 @@
-const index = async (model) => {
-  const url = `http://localhost:4000/${model}?offset=1`;
+const index = async (model, page) => {
+  const url = `http://localhost:4000/${model}?offset=${page}`;
 
   const config = {
     mode: 'cors',

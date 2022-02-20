@@ -36,3 +36,22 @@
 #citizens li a:hover p {
   color: #fff;
 }
+
+#citizens .pagination-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#citizens .pagination-buttons {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+#citizens .pagination-buttons span {
+  border: black solid 1px;
+  padding: 5px;
+  margin: 2.5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
