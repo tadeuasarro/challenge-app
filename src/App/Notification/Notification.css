@@ -1,0 +1,21 @@
+#notification {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-notification {
+  border: darkred solid 1px;
+  color: darkred;
+  background-color: lightcoral;
+}
+
+.success-notification {
+  border: darkgreen solid 1px;
+  color: darkgreen;
+  background-color: lightgreen;
+}

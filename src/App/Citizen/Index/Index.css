@@ -28,8 +28,11 @@
   display: block;
   text-decoration: none;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#citizens li a:hover {
+#citizens li a:hover p {
   color: #fff;
 }

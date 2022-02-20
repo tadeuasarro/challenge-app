@@ -1,5 +1,5 @@
-const citizenIndex = async () => {
-  const url = 'http://localhost:4000/citizen?offset=1';
+const index = async (model) => {
+  const url = `http://localhost:4000/${model}?offset=1`;
 
   const config = {
     mode: 'cors',
@@ -16,4 +16,4 @@ const citizenIndex = async () => {
   return (result);
 };
 
-export default citizenIndex;
+export default index;

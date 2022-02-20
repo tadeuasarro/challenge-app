@@ -1,0 +1,95 @@
+#create-citizen {
+  color: red;
+  width: 40%;
+}
+
+#create-citizen form {
+  display: flex;
+  flex-direction: column;
+}
+
+#create-citizen input {
+  margin: 5px 0;
+  padding: 2px;
+  height: 40px;
+  font-size: 15px;
+}
+
+#create-citizen button {
+  background-color: #313944;
+}
+
+#create-citizen .cancel {
+  background-color: red;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#create-citizen .button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#create-citizen .cancel:hover {
+  background-color: #fff;
+  color: red;
+  border: solid red 1px;
+}
+
+#create-citizen button,
+#create-citizen .cancel {
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 17.5px;
+  margin-top: 10px;
+  width: 45%;
+}
+
+#create-citizen button:hover {
+  cursor: pointer;
+  border: 1px solid #313944;
+  background-color: #fff;
+  color: #313944;
+}
+
+#create-citizen .picture {
+  border: solid 1px #4f4f4f;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+#create-citizen .picture::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+#create-citizen .picture::before {
+  content: 'Adicione uma foto';
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px 3px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+#create-citizen .active-container {
+  margin-top: 5px;
+  border-radius: 5px;
+  border: #4f4f4f solid 1px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 40px;
+}
+
+#create-citizen .active-container label {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

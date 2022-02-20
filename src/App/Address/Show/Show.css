@@ -1,0 +1,82 @@
+#address {
+    width: 40%;
+  }
+  
+  #address .grid {
+    display: grid;
+    width: 100%;
+  }
+  
+  #address .key {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  #address .value {
+    grid-column-start: 4;
+    grid-column-end: 12;
+    text-align: end;
+  }
+  
+  #address h1,
+  #address .key,
+  #address .value {
+    border-bottom: grey solid 1px;
+    padding: 15px 2.5px;
+  }
+  
+  #address .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #address .back {
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  #address .back:hover {
+    background-color: #fff;
+    color: red;
+    border: red solid 1px;
+  }
+  
+  #address .address {
+    background-color: #fff;
+    color: darkblue ;
+    font-weight: bold;
+    border: darkblue solid 1px;
+  }
+  
+  #address .address:hover {
+    background-color: darkblue;
+    color: #fff ;
+  }
+  
+  #address .edit {
+    background-color: #fff;
+    color: rgb(46, 126, 126);
+    font-weight: bold;
+    border: rgb(46, 126, 126) solid 1px;
+    position: absolute;
+  }
+  
+  #address .edit:hover {
+    background-color: rgb(46, 126, 126);
+    color: #fff ;
+  }
+  
+  #address .button {
+    border-radius: 5px;
+    padding: 7.5px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .edit-container {
+    margin-top: 20px;
+    position: relative;
+  }
+  

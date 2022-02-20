@@ -1,5 +1,5 @@
-const citizenShow = async (citizenId) => {
-  const url = `http://localhost:4000/citizen/${citizenId}`;
+const show = async (model, id) => {
+  const url = `http://localhost:4000/${model}/${id}`;
 
   const config = {
     mode: 'cors',
@@ -16,4 +16,4 @@ const citizenShow = async (citizenId) => {
   return (result);
 };
 
-export default citizenShow;
+export default show;
